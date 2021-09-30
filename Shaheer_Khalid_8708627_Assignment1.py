@@ -11,7 +11,7 @@ print("Please enter 'W' for WHITE")
 print("Please enter 'B' for BLUE")
 print("Please enter 'O' for ORANGE")
 print("Please enter 'R' for RED")
-print("WHAT COLOUR WOULD YOU LIKE TO PICK TODAY ?")
+print("WHAT COLOUR WOULD YOU LIKE TO PICK TODAY?")
 colourofshirt = str(input())
 #Using if statement to assign my variable a colour which could also be printed later
 #keeping in mind that the user can enter small or Capital letter
@@ -31,7 +31,7 @@ print("1.POLO SHIRT        2.REGULAR T_SHIRT")
 print("Please enter 1 for POLO SHIRT OR enter 2 for REGULAR T-SHIRT")
 shirttype = float(input())
 
-#As required user will make their choice by either entering 1 or 2
+#As required, user will make their choice by entering either 1 or 2
 if (shirttype == 1):
     shirttype = "POLO SHIRT"
 elif (shirttype == 2):
@@ -40,27 +40,27 @@ elif (shirttype == 2):
 #Get quantity of shirt
 print("---------------------------------------------------------------------------")
 print("HOW MANY SHIRTS WOULD YOU LIKE TO PURCHASE TODAY?")
-shirtqty = float(input())
+shirtqty = int(input())
 
 
 #Declare cost of shirt (CONSTANT)
 COST = 9.99
-#Calculate the total cost with HST13%
+#Calculate the total cost before and after HST13%
 tax = (shirtqty * COST) * 0.13
 totalcostbeftax = COST * shirtqty
 totalcostafttax = (shirtqty * COST) + tax
 
 #Print receipt/Summary of the order
-#testing
+print("")
 print("----------------------------RECIEPT-----------------------------")
 print("----------------------ABBY'S MURCHANDIZING----------------------")
 print("")
 print("COLOUR OF SHIRT       "+ colourofshirt)
 
-print("YOUR CHOICE OF SHIRT: "+ shirttype)
-print("QTY                   "+ shirtqty)
+print("CHOICE OF SHIRT       "+ shirttype)
+print("QTY                  ", shirtqty)
 print("                      -----------------")
-print("SUB-TOTAL            $"+ totalcostbeftax)
-print("HST 13%              $"+ tax)
-print("TOTAL COST           $"+ totalcostafttax)
+print("SUB-TOTAL             $", format(totalcostbeftax,".2f"))
+print("HST 13%               $", format(tax,".2f"))
+print("TOTAL COST            $", format(totalcostafttax,".2f"))
 
