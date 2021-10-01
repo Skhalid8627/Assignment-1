@@ -28,10 +28,10 @@ elif (colourofshirt == "R") or (colourofshirt == "r"):
 print("---------------------------------------------------------------------------")
 print("WE OFFER TWO OPTIONS FOR OUR T-SHIRTS:")
 print("1.POLO SHIRT        2.REGULAR T_SHIRT")
-print("Please enter 1 for POLO SHIRT OR enter 2 for REGULAR T-SHIRT")
-shirttype = float(input())
+print("Please enter 1 for 'POLO SHIRT' OR enter 2 for 'REGULAR T-SHIRT'")
+shirttype = int(input())
 
-#As required, user will make their choice by entering either 1 or 2
+#As required, user will make their choice by entering either 1 or 2 (integer)
 if (shirttype == 1):
     shirttype = "POLO SHIRT"
 elif (shirttype == 2):
